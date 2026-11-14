@@ -1,0 +1,42 @@
+{
+  "name": "@sculptr/controls",
+  "version": "1.1.1",
+  "displayName": "Controls",
+  "description": "Play games with the keys you chose in the host: a sculptr mod.",
+  "keywords": [
+    "gamemaker",
+    "mod",
+    "sculptr",
+    "controls"
+  ],
+  "homepage": "https://github.com/QuentinJanuel/sculptr-controls#readme",
+  "bugs": "https://github.com/QuentinJanuel/sculptr-controls/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuentinJanuel/sculptr-controls.git"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "concurrently -k \"vite build --watch\" \"vite preview\"",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "vite build",
+    "test": "node --test \"src/**/*.test.ts\""
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.4",
+    "concurrently": "^10.0.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0"
+  },
+  "dependencies": {
+    "@sculptr/sdk": "^2.16.0"
+  }
+}
