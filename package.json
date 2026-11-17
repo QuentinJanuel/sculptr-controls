@@ -2,6 +2,7 @@
   "name": "@sculptr/controls",
   "version": "1.1.1",
   "displayName": "Controls",
+  "icon": "https://cdn.jsdelivr.net/npm/@sculptr/controls/icon.svg",
   "description": "Play games with the keys you chose in the host: a sculptr mod.",
   "keywords": [
     "gamemaker",
@@ -25,7 +26,8 @@
     "test": "node --test \"src/**/*.test.ts\""
   },
   "files": [
-    "dist"
+    "dist",
+    "icon.svg"
   ],
   "publishConfig": {
     "access": "public"
